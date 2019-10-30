@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_-vW0sPrXEem577RgX_-HzA">
+  <modelElement href="XInventory.uml#_-snpwPrXEem577RgX_-HzA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BeAzUPrYEem577RgX_-HzA" sourceAnchor="750.0,116.0" targetAnchor="0.0,93.0" target="_Bb4sYPrYEem577RgX_-HzA" source="_Bfdk0PrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__PSR8PrXEem577RgX_-HzA"/>
+    <stereotypes xmi:id="_BfSlsPrYEem577RgX_-HzA" name="Reference">
+      <modelElement href="XInventory.uml#__PUHIPrXEem577RgX_-HzA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BfQwgPrYEem577RgX_-HzA" text="">
+      <visualProperties xmi:id="_B89ZIPrYEem577RgX_-HzA" position="-74.5,-11.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BfR-oPrYEem577RgX_-HzA" aggregationKind="NONE" name="">
+      <modelElement href="XInventory.uml#__PSR8frXEem577RgX_-HzA"/>
+      <visualProperties xmi:id="_B88yEPrYEem577RgX_-HzA" position="5.0,-66.5"/>
+      <visibility xmi:id="_BfYFQfrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfYFQPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BfR-ofrYEem577RgX_-HzA" aggregationKind="NONE" name="inventoryItems" navigable="true">
+      <modelElement href="XInventory.uml#__O0-8PrXEem577RgX_-HzA"/>
+      <visualProperties xmi:id="_B8-AMPrYEem577RgX_-HzA" position="-118.0,11.5"/>
+      <visibility xmi:id="_BfYsUfrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfYsUPrYEem577RgX_-HzA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Bey2cPrYEem577RgX_-HzA" sourceAnchor="375.0,0.0" targetAnchor="362.0,200.0" dashed="true" superClass="_Bc28wPrYEem577RgX_-HzA" subClass="_Bfdk0PrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__OirEPrXEem577RgX_-HzA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Bh7qAPrYEem577RgX_-HzA" sourceAnchor="181.0,0.0" targetAnchor="375.0,231.0" target="_Bfdk0PrYEem577RgX_-HzA" source="_BjvA0PrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__PUHIfrXEem577RgX_-HzA"/>
+    <stereotypes xmi:id="_Bjr9gvrYEem577RgX_-HzA" name="Reference">
+      <modelElement href="XInventory.uml#__PVVQPrXEem577RgX_-HzA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BjrWcPrYEem577RgX_-HzA" text="">
+      <visualProperties xmi:id="_B9AccPrYEem577RgX_-HzA" position="-20.5,-15.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Bjr9gPrYEem577RgX_-HzA" aggregationKind="NONE" name="">
+      <modelElement href="XInventory.uml#__PUHIvrXEem577RgX_-HzA"/>
+      <visualProperties xmi:id="_B8_OUPrYEem577RgX_-HzA" position="-21.0,-59.5"/>
+      <visibility xmi:id="_BjtLofrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BjtLoPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Bjr9gfrYEem577RgX_-HzA" aggregationKind="NONE" name="serviceCaller" navigable="true">
+      <modelElement href="XInventory.uml#__O5QYPrXEem577RgX_-HzA"/>
+      <visualProperties xmi:id="_B9BDgPrYEem577RgX_-HzA" position="2.5,5.5"/>
+      <visibility xmi:id="_BjtysfrYEem577RgX_-HzA" label="-"/>
+      <cardinality xmi:id="_BjtysPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BZ69gPrYEem577RgX_-HzA" name="InventoryController">
+    <modelElement href="XInventory.uml#__Me1kPrXEem577RgX_-HzA"/>
+    <visualProperties xmi:id="_BZ7kkPrYEem577RgX_-HzA" position="14.0,893.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BZ7kkfrYEem577RgX_-HzA" label="+"/>
+    <operations xmi:id="_BZ7kkvrYEem577RgX_-HzA" name="main" staticOperation="true">
+      <modelElement href="XInventory.uml#__MkVIPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_BZ7kk_rYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BZ7klPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BZ7klfrYEem577RgX_-HzA" name="args">
+        <modelElement href="XInventory.uml#__Mk8MPrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BZ7klvrYEem577RgX_-HzA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_BZ7kl_rYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BZ7kmPrYEem577RgX_-HzA" name="isValidOperation" staticOperation="true">
+      <modelElement href="XInventory.uml#__MnYcPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_BZ7kmfrYEem577RgX_-HzA" label="-"/>
+      <cardinality xmi:id="_BZ7kmvrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BZ7km_rYEem577RgX_-HzA">
+        <modelElement href="XInventory.uml#__Mn_gPrXEem577RgX_-HzA"/>
+        <type xmi:id="_BZ7knPrYEem577RgX_-HzA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BZ7knfrYEem577RgX_-HzA" name="inventoryOperation">
+        <modelElement href="XInventory.uml#__MnYcfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BZ7knvrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BZ7kn_rYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Bb4sYPrYEem577RgX_-HzA" name="Item" associationsIn="_BeAzUPrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__MomkPrXEem577RgX_-HzA"/>
+    <visualProperties xmi:id="_Bb4sYfrYEem577RgX_-HzA" position="1028.0,271.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bb4sYvrYEem577RgX_-HzA" label="+"/>
+    <attributes xmi:id="_Bb4sY_rYEem577RgX_-HzA" name="name">
+      <modelElement href="XInventory.uml#__OyisPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bb4sZPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb4sZfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bb4sZvrYEem577RgX_-HzA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Bb4sZ_rYEem577RgX_-HzA" name="costPrice">
+      <modelElement href="XInventory.uml#__Ozw0PrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bb4saPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb4safrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bb4savrYEem577RgX_-HzA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Bb4sa_rYEem577RgX_-HzA" name="sellingPrice">
+      <modelElement href="XInventory.uml#__Ozw0frXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bb5TcPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb5TcfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bb5TcvrYEem577RgX_-HzA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Bb5Tc_rYEem577RgX_-HzA" name="quantity">
+      <modelElement href="XInventory.uml#__O0X4PrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bb5TdPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb5TdfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bb5TdvrYEem577RgX_-HzA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Bb5Td_rYEem577RgX_-HzA" name="Item">
+      <modelElement href="XInventory.uml#__Mrp4PrXEem577RgX_-HzA"/>
+      <keywords xmi:id="_Bb5TePrYEem577RgX_-HzA" keyword="create"/>
+      <visibility xmi:id="_Bb5TefrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb5TevrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Bb5Te_rYEem577RgX_-HzA">
+        <modelElement href="XInventory.uml#__Ms4AfrXEem577RgX_-HzA"/>
+        <type xmi:id="_Bb5TfPrYEem577RgX_-HzA" name="Item">
+          <modelElement href="XInventory.uml#__MomkPrXEem577RgX_-HzA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Bb5TffrYEem577RgX_-HzA" name="name">
+        <modelElement href="XInventory.uml#__Mrp4frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5TfvrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5Tf_rYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bb5TgPrYEem577RgX_-HzA" name="costPrice">
+        <modelElement href="XInventory.uml#__MsQ8PrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5TgfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5TgvrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bb5Tg_rYEem577RgX_-HzA" name="sellingPrice">
+        <modelElement href="XInventory.uml#__MsQ8frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5ThPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5ThfrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bb5ThvrYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__MsQ8vrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5Th_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5TiPrYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bb5TifrYEem577RgX_-HzA" name="currentProfit">
+        <modelElement href="XInventory.uml#__MsQ8_rXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5TivrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5Ti_rYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bb5TjPrYEem577RgX_-HzA" name="compareTo">
+      <modelElement href="XInventory.uml#__OV2wPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_Bb5TjfrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__OXr8PrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Bb5TjvrYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__OYTAPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bb5Tj_rYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bb5TkPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Bb5TkfrYEem577RgX_-HzA">
+        <modelElement href="XInventory.uml#__OXE4PrXEem577RgX_-HzA"/>
+        <type xmi:id="_Bb5TkvrYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Bb5Tk_rYEem577RgX_-HzA" name="o">
+        <modelElement href="XInventory.uml#__OV2wfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bb5TlPrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bb5TlfrYEem577RgX_-HzA" name="Item">
+          <modelElement href="XInventory.uml#__MomkPrXEem577RgX_-HzA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Bc28wPrYEem577RgX_-HzA" name="XInventoryService" subclassedBy="_Bey2cPrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__MxJcPrXEem577RgX_-HzA"/>
+    <visualProperties xmi:id="_Bc28wfrYEem577RgX_-HzA" position="23.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bc28wvrYEem577RgX_-HzA" label="~"/>
+    <operations xmi:id="_Bc28w_rYEem577RgX_-HzA" name="createItem">
+      <modelElement href="XInventory.uml#__MyXkPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc28xPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc28xfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bc28xvrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__MyXkfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc28x_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc28yPrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc28yfrYEem577RgX_-HzA" name="costPrice">
+        <modelElement href="XInventory.uml#__My-oPrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc28yvrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc28y_rYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc28zPrYEem577RgX_-HzA" name="sellingPrice">
+        <modelElement href="XInventory.uml#__My-ofrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc28zfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc28zvrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc28z_rYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__My-ovrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc280PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc280frYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc280vrYEem577RgX_-HzA" name="currentProfit">
+        <modelElement href="XInventory.uml#__My-o_rXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc280_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc281PrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bc281frYEem577RgX_-HzA" name="deleteItem">
+      <modelElement href="XInventory.uml#__M0MwPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc281vrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc281_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bc282PrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M0MwfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc282frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc282vrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bc282_rYEem577RgX_-HzA" name="updateBuy">
+      <modelElement href="XInventory.uml#__M0z0PrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc283PrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc283frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bc283vrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M0z0frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc283_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc284PrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc284frYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__M0z0vrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc284vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc284_rYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bc285PrYEem577RgX_-HzA" name="updateSell">
+      <modelElement href="XInventory.uml#__M2B8PrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc285frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc285vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bc285_rYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M2B8frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc286PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc286frYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc286vrYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__M2B8vrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc286_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc287PrYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bc287frYEem577RgX_-HzA" name="generateReport">
+      <modelElement href="XInventory.uml#__M2pAPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc287vrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc287_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Bc288PrYEem577RgX_-HzA" name="updateSellPrice">
+      <modelElement href="XInventory.uml#__M3QEPrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bc288frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bc288vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bc288_rYEem577RgX_-HzA" name="string">
+        <modelElement href="XInventory.uml#__M3QEfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc289PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc289frYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bc289vrYEem577RgX_-HzA" name="parseFloat">
+        <modelElement href="XInventory.uml#__M3QEvrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bc289_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bc28-PrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Bfdk0PrYEem577RgX_-HzA" name="XInventoryServiceImpl" associationsIn="_Bh7qAPrYEem577RgX_-HzA" associationsOut="_BeAzUPrYEem577RgX_-HzA" generalizations="_Bey2cPrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__M4eMPrXEem577RgX_-HzA"/>
+    <visualProperties xmi:id="_Bfdk0frYEem577RgX_-HzA" position="10.0,248.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bfdk0vrYEem577RgX_-HzA" label="+"/>
+    <attributes xmi:id="_Bfdk0_rYEem577RgX_-HzA" defaultValue="new ArrayList&lt;Item>()" name="inventoryItems" staticAttribute="true">
+      <modelElement href="XInventory.uml#__O0-8PrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_Bfdk1PrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__O20IPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bfdk1frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bfdk1vrYEem577RgX_-HzA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Bfdk1_rYEem577RgX_-HzA" name="Item">
+        <modelElement href="XInventory.uml#__MomkPrXEem577RgX_-HzA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Bfdk2PrYEem577RgX_-HzA" defaultValue="0" name="totalProfit" staticAttribute="true">
+      <modelElement href="XInventory.uml#__O3bMPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_Bfdk2frYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__O4CQPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bfdk2vrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bfdk2_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bfdk3PrYEem577RgX_-HzA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Bfdk3frYEem577RgX_-HzA" name="createItem">
+      <modelElement href="XInventory.uml#__M6TYPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_Bfdk3vrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__M7hgPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Bfdk3_rYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__M9WsPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bfdk4PrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bfdk4frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bfdk4vrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M6TYfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk4_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk5PrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bfdk5frYEem577RgX_-HzA" name="costPrice">
+        <modelElement href="XInventory.uml#__M6TYvrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk5vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk5_rYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bfdk6PrYEem577RgX_-HzA" name="sellingPrice">
+        <modelElement href="XInventory.uml#__M6TY_rXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk6frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk6vrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bfdk6_rYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__M6TZPrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk7PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk7frYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Bfdk7vrYEem577RgX_-HzA" name="currentProfit">
+        <modelElement href="XInventory.uml#__M66cPrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk7_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk8PrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bfdk8frYEem577RgX_-HzA" name="itemDoesNotExistInInventory">
+      <modelElement href="XInventory.uml#__M-k0PrXEem577RgX_-HzA"/>
+      <visibility xmi:id="_Bfdk8vrYEem577RgX_-HzA" label="-"/>
+      <cardinality xmi:id="_Bfdk8_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Bfdk9PrYEem577RgX_-HzA">
+        <modelElement href="XInventory.uml#__M_L4PrXEem577RgX_-HzA"/>
+        <type xmi:id="_Bfdk9frYEem577RgX_-HzA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Bfdk9vrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M-k0frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk9_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bfdk-PrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Bfdk-frYEem577RgX_-HzA" name="deleteItem">
+      <modelElement href="XInventory.uml#__M_y8PrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_Bfdk-vrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NAaAPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Bfdk-_rYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NBBEPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bfdk_PrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_Bfdk_frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Bfdk_vrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__M_y8frXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_Bfdk__rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfdlAPrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BfdlAfrYEem577RgX_-HzA" name="updateBuy">
+      <modelElement href="XInventory.uml#__NBoIPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BfdlAvrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NCPMPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BfdlA_rYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NC2QPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BfdlBPrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfdlBfrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BfeL4PrYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__NBoIfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL4frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeL4vrYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BfeL4_rYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__NBoIvrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL5PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeL5frYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BfeL5vrYEem577RgX_-HzA" name="updateSell">
+      <modelElement href="XInventory.uml#__NDdUPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BfeL5_rYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NErcPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BfeL6PrYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NFSgPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BfeL6frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfeL6vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BfeL6_rYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__NDdUfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL7PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeL7frYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BfeL7vrYEem577RgX_-HzA" name="quantity">
+        <modelElement href="XInventory.uml#__NEEYPrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL7_rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeL8PrYEem577RgX_-HzA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BfeL8frYEem577RgX_-HzA" name="generateReport">
+      <modelElement href="XInventory.uml#__NFSgvrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BfeL8vrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NGgoPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BfeL8_rYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NHHsPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BfeL9PrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfeL9frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BfeL9vrYEem577RgX_-HzA" name="updateSellPrice">
+      <modelElement href="XInventory.uml#__NHuwPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BfeL9_rYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NIV0PrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BfeL-PrYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NJj8PrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BfeL-frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BfeL-vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BfeL-_rYEem577RgX_-HzA" name="itemName">
+        <modelElement href="XInventory.uml#__NHuwfrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL_PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeL_frYEem577RgX_-HzA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BfeL_vrYEem577RgX_-HzA" name="sellingPrice">
+        <modelElement href="XInventory.uml#__NHuwvrXEem577RgX_-HzA"/>
+        <cardinality xmi:id="_BfeL__rYEem577RgX_-HzA" label="1" max="1" min="1"/>
+        <type xmi:id="_BfeMAPrYEem577RgX_-HzA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BjvA0PrYEem577RgX_-HzA" name="XInventoryServiceImplTest" associationsOut="_Bh7qAPrYEem577RgX_-HzA">
+    <modelElement href="XInventory.uml#__NMnQPrXEem577RgX_-HzA"/>
+    <visualProperties xmi:id="_BjvA0frYEem577RgX_-HzA" position="204.0,725.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BjvA0vrYEem577RgX_-HzA" label="+"/>
+    <attributes xmi:id="_BjvA0_rYEem577RgX_-HzA" defaultValue="null" name="serviceCaller" staticAttribute="true">
+      <modelElement href="XInventory.uml#__O5QYPrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BjvA1PrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__O53cPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BjvA1frYEem577RgX_-HzA" label="-"/>
+      <cardinality xmi:id="_BjvA1vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+      <type xmi:id="_BjvA1_rYEem577RgX_-HzA" name="XInventoryServiceImpl">
+        <modelElement href="XInventory.uml#__M4eMPrXEem577RgX_-HzA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BjvA2PrYEem577RgX_-HzA" name="_initializer1" staticOperation="true">
+      <modelElement href="XInventory.uml#__NN1YPrXEem577RgX_-HzA"/>
+      <keywords xmi:id="_BjvA2frYEem577RgX_-HzA" keyword="init"/>
+      <stereotypes xmi:id="_BjvA2vrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NOccPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BjvA2_rYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BjvA3PrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BjvA3frYEem577RgX_-HzA" name="testCreateItemAndDeleteItem">
+      <modelElement href="XInventory.uml#__NOccfrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BjvA3vrYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NPDgPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BjvA3_rYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NPqkPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BjvA4PrYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BjvA4frYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BjvA4vrYEem577RgX_-HzA" name="testUpdateSellAndUpdateSellPriceItem">
+      <modelElement href="XInventory.uml#__NPqkvrXEem577RgX_-HzA"/>
+      <stereotypes xmi:id="_BjvA4_rYEem577RgX_-HzA" name="LegacyStyledElement">
+        <modelElement href="XInventory.uml#__NQRoPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BjvA5PrYEem577RgX_-HzA" name="Annotations">
+        <modelElement href="XInventory.uml#__NQ4sPrXEem577RgX_-HzA"/>
+      </stereotypes>
+      <visibility xmi:id="_BjvA5frYEem577RgX_-HzA" label="+"/>
+      <cardinality xmi:id="_BjvA5vrYEem577RgX_-HzA" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

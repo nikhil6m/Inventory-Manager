@@ -6,13 +6,24 @@ import java.util.List;
 
 public class XInventoryServiceImpl implements XInventoryService {
 
-	private static List<Item> inventoryItems = new ArrayList<Item>();
-	private static float totalProfit = 0;
+	public static List<Item> inventoryItems = new ArrayList<Item>();
+	public static float totalProfit = 0;
 
 	@Override
-	public void createItem(String itemName, float costPrice, float sellingPrice, int quantity,float currentProfit) {
-		Item newInventoryItem = new Item(itemName, costPrice, sellingPrice, quantity, currentProfit);
-		inventoryItems.add(newInventoryItem);
+	public void createItem(String itemName, float costPrice, float sellingPrice, int quantity, float currentProfit) {
+		if (itemDoesNotExistInInventory(itemName)) {
+			Item newInventoryItem = new Item(itemName, costPrice, sellingPrice, quantity, currentProfit);
+			inventoryItems.add(newInventoryItem);
+		}
+	}
+
+	private boolean itemDoesNotExistInInventory(String itemName) {
+		for (Item item : inventoryItems) {
+			if (item.getName().equals(itemName)) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	@Override
@@ -55,14 +66,14 @@ public class XInventoryServiceImpl implements XInventoryService {
 		float totalValue = 0;
 		String format = "%-18s%-15s%-20s%-15s%s%n";
 		Collections.sort(inventoryItems);
-		for(Item item : inventoryItems) {
+		for (Item item : inventoryItems) {
 			System.out.printf(format, item.getName(), item.getCostPrice(), item.getSellingPrice(), item.getQuantity(),
 					item.getCostPrice() * item.getQuantity());
-			totalValue += item.getCostPrice()*item.getQuantity();
+			totalValue += item.getCostPrice() * item.getQuantity();
 		}
 		System.out.println("-------------------------------------------------------------------------- ");
-		System.out.println("Total Value 							   "+String.format("%.2f", totalValue));
-		System.out.println("Profit since previous report 			   		   "+String.format("%.2f", totalProfit));
+		System.out.println("Total Value 							   " + String.format("%.2f", totalValue));
+		System.out.println("Profit since previous report 			   		   " + String.format("%.2f", totalProfit));
 		totalProfit = 0;
 	}
 

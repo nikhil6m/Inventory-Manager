@@ -34,9 +34,8 @@ public class InventoryController {
 						inventoryServiceImpl.updateSellPrice(operation[1], Float.parseFloat(operation[2]));
 						break;
 					default:
-						System.out.println("Please check the input command");
+						System.out.println("Please check the input command");  // Can be replaced with loggers(slf4j or log4j) 
 				}
-
 			}
 		}
 		inputReader.close();
@@ -44,8 +43,15 @@ public class InventoryController {
 
 	private static boolean isValidOperation(String inventoryOperation) {
 		String[] inputValues = inventoryOperation.split(" ");
+		boolean isCommandValid = false;
 		if (0 < inputValues.length && inputValues.length < 5) {
+			String arg1 = inputValues[0];
+			if(arg1.equals("create") || arg1.equals("updateBuy") || arg1.equals("updateSellPrice") || arg1.equals("report")
+					|| arg1.equals("updateSell") || arg1.equals("delete")) {
+				isCommandValid = true;
+			}
+			// Assumption : The rest of input string is entered in the respective data types(Number).
 		}
-		return true;
+		return isCommandValid;
 	}
 }

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_-snpwPrXEem577RgX_-HzA" name="XInventory">
+    <eAnnotations xmi:id="_-_CPcPrXEem577RgX_-HzA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_-_CPcfrXEem577RgX_-HzA" source="codegen">
+        <details xmi:id="_-_CPcvrXEem577RgX_-HzA" key="codegenDirectory" value="/XInventory/src"/>
+        <details xmi:id="__qlG0PrXEem577RgX_-HzA" key="AssociatedSourceCode" value="/XInventory/src/code/InventoryController.java;2687187649/1;/XInventory/src/code/Item.java;2298347936/1;/XInventory/src/code/XInventoryService.java;2540100308/1;/XInventory/src/code/XInventoryServiceImpl.java;2537891295/1;/XInventory/src/test/XInventoryServiceImplTest.java;4013229434/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="__LaekPrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="__LaekfrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFoPrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFofrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFovrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFo_rXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFpPrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="__LbFpfrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="__Lc60PrXEem577RgX_-HzA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="__LjBcPrXEem577RgX_-HzA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="__LjBcfrXEem577RgX_-HzA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="__OQXMPrXEem577RgX_-HzA" name="Scanner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__OaIMPrXEem577RgX_-HzA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__OckcPrXEem577RgX_-HzA" name="Collections"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="__OdykfrXEem577RgX_-HzA" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__OrN8PrXEem577RgX_-HzA" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__OrN8frXEem577RgX_-HzA" name="Comparable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__LqWMPrXEem577RgX_-HzA" name="code">
+      <packagedElement xmi:type="uml:Class" xmi:id="__Me1kPrXEem577RgX_-HzA" name="InventoryController">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PEPgPrXEem577RgX_-HzA" name="main" specification="__MkVIPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PE2kPrXEem577RgX_-HzA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__PE2kfrXEem577RgX_-HzA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner inputReader = new Scanner(System.in);&#xD;
+		while (inputReader.hasNextLine()) {&#xD;
+			String inventoryOperation = inputReader.nextLine();&#xD;
+			if (inventoryOperation.equals(&quot;#&quot;)) {&#xD;
+				break;&#xD;
+			}&#xD;
+			if (isValidOperation(inventoryOperation)) {&#xD;
+				String[] operation = inventoryOperation.split(&quot; &quot;, 4);&#xD;
+				XInventoryServiceImpl inventoryServiceImpl = new XInventoryServiceImpl();&#xD;
+				switch (operation[0]) {&#xD;
+					case &quot;create&quot;:&#xD;
+						inventoryServiceImpl.createItem(operation[1], Float.parseFloat(operation[2]),&#xD;
+								Float.parseFloat(operation[3]),0,0);&#xD;
+						break;&#xD;
+					case &quot;delete&quot;:&#xD;
+						inventoryServiceImpl.deleteItem(operation[1]);&#xD;
+						break;&#xD;
+					case &quot;updateBuy&quot;:&#xD;
+						inventoryServiceImpl.updateBuy(operation[1], Integer.parseInt(operation[2]));&#xD;
+						break;&#xD;
+					case &quot;updateSell&quot;:&#xD;
+						inventoryServiceImpl.updateSell(operation[1], Integer.parseInt(operation[2]));&#xD;
+						break;&#xD;
+					case &quot;report&quot;:&#xD;
+						inventoryServiceImpl.generateReport();&#xD;
+						break;&#xD;
+					case &quot;updateSellPrice&quot;:&#xD;
+						inventoryServiceImpl.updateSellPrice(operation[1], Float.parseFloat(operation[2]));&#xD;
+						break;&#xD;
+					default:&#xD;
+						System.out.println(&quot;Please check the input command&quot;);  // Can be replaced with loggers(slf4j or log4j) &#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		inputReader.close();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PIg8PrXEem577RgX_-HzA" name="isValidOperation" specification="__MnYcPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PIg8frXEem577RgX_-HzA" name="inventoryOperation">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PIg8vrXEem577RgX_-HzA" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String[] inputValues = inventoryOperation.split(&quot; &quot;);&#xD;
+		boolean isCommandValid = false;&#xD;
+		if (0 &lt; inputValues.length &amp;&amp; inputValues.length &lt; 5) {&#xD;
+			String arg1 = inputValues[0];&#xD;
+			if(arg1.equals(&quot;create&quot;) || arg1.equals(&quot;updateBuy&quot;) || arg1.equals(&quot;updateSellPrice&quot;) || arg1.equals(&quot;report&quot;)&#xD;
+					|| arg1.equals(&quot;updateSell&quot;) || arg1.equals(&quot;delete&quot;)) {&#xD;
+				isCommandValid = true;&#xD;
+			}&#xD;
+			// Assumption : The rest of input string is entered in the respective data types(Number).&#xD;
+		}&#xD;
+		return isCommandValid;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__MkVIPrXEem577RgX_-HzA" name="main" isStatic="true" method="__PEPgPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__Mk8MPrXEem577RgX_-HzA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__MmKUPrXEem577RgX_-HzA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__MnYcPrXEem577RgX_-HzA" name="isValidOperation" visibility="private" isStatic="true" method="__PIg8PrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__MnYcfrXEem577RgX_-HzA" name="inventoryOperation">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Mn_gPrXEem577RgX_-HzA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__MomkPrXEem577RgX_-HzA" name="Item">
+        <ownedAttribute xmi:id="__OyisPrXEem577RgX_-HzA" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__Ozw0PrXEem577RgX_-HzA" name="costPrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__Ozw0frXEem577RgX_-HzA" name="sellingPrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__O0X4PrXEem577RgX_-HzA" name="quantity">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="__OtqMPrXEem577RgX_-HzA" client="__MomkPrXEem577RgX_-HzA" supplier="__OrN8frXEem577RgX_-HzA" contract="__OrN8frXEem577RgX_-HzA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PJIAPrXEem577RgX_-HzA" name="Item" specification="__Mrp4PrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PJIAfrXEem577RgX_-HzA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PJIAvrXEem577RgX_-HzA" name="costPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PJIA_rXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PJIBPrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PJIBfrXEem577RgX_-HzA" name="currentProfit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PJIBvrXEem577RgX_-HzA" type="__MomkPrXEem577RgX_-HzA" direction="return"/>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+		this.costPrice = costPrice;&#xD;
+		this.sellingPrice = sellingPrice;&#xD;
+		this.quantity = quantity;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PJvEPrXEem577RgX_-HzA" name="compareTo" specification="__OV2wPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PJvEfrXEem577RgX_-HzA" name="o" type="__MomkPrXEem577RgX_-HzA"/>
+          <ownedParameter xmi:id="__PJvEvrXEem577RgX_-HzA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.getName().compareTo(o.getName());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__Mrp4PrXEem577RgX_-HzA" name="Item" method="__PJIAPrXEem577RgX_-HzA">
+          <eAnnotations xmi:id="__MsQ9PrXEem577RgX_-HzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__Ms4APrXEem577RgX_-HzA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__Mrp4frXEem577RgX_-HzA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__MsQ8PrXEem577RgX_-HzA" name="costPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__MsQ8frXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__MsQ8vrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__MsQ8_rXEem577RgX_-HzA" name="currentProfit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Ms4AfrXEem577RgX_-HzA" type="__MomkPrXEem577RgX_-HzA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__OV2wPrXEem577RgX_-HzA" name="compareTo" method="__PJvEPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__OV2wfrXEem577RgX_-HzA" name="o" type="__MomkPrXEem577RgX_-HzA"/>
+          <ownedParameter xmi:id="__OXE4PrXEem577RgX_-HzA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="__MxJcPrXEem577RgX_-HzA" name="XInventoryService" visibility="package">
+        <ownedOperation xmi:id="__MyXkPrXEem577RgX_-HzA" name="createItem">
+          <ownedParameter xmi:id="__MyXkfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__My-oPrXEem577RgX_-HzA" name="costPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__My-ofrXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__My-ovrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__My-o_rXEem577RgX_-HzA" name="currentProfit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M0MwPrXEem577RgX_-HzA" name="deleteItem">
+          <ownedParameter xmi:id="__M0MwfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M0z0PrXEem577RgX_-HzA" name="updateBuy">
+          <ownedParameter xmi:id="__M0z0frXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M0z0vrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M2B8PrXEem577RgX_-HzA" name="updateSell">
+          <ownedParameter xmi:id="__M2B8frXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M2B8vrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M2pAPrXEem577RgX_-HzA" name="generateReport"/>
+        <ownedOperation xmi:id="__M3QEPrXEem577RgX_-HzA" name="updateSellPrice">
+          <ownedParameter xmi:id="__M3QEfrXEem577RgX_-HzA" name="string">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M3QEvrXEem577RgX_-HzA" name="parseFloat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__M4eMPrXEem577RgX_-HzA" name="XInventoryServiceImpl">
+        <ownedAttribute xmi:id="__O0-8PrXEem577RgX_-HzA" name="inventoryItems" isStatic="true" type="__MomkPrXEem577RgX_-HzA" isOrdered="true" association="__PSR8PrXEem577RgX_-HzA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__O1mAPrXEem577RgX_-HzA" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__O2NEPrXEem577RgX_-HzA" value="new ArrayList&lt;Item>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__O3bMPrXEem577RgX_-HzA" name="totalProfit" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__O3bMfrXEem577RgX_-HzA" value="0"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="__OirEPrXEem577RgX_-HzA" client="__M4eMPrXEem577RgX_-HzA" supplier="__MxJcPrXEem577RgX_-HzA" contract="__MxJcPrXEem577RgX_-HzA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PKWIPrXEem577RgX_-HzA" name="createItem" specification="__M6TYPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PKWIfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PKWIvrXEem577RgX_-HzA" name="costPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PKWI_rXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PKWJPrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PKWJfrXEem577RgX_-HzA" name="currentProfit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (itemDoesNotExistInInventory(itemName)) {&#xD;
+			Item newInventoryItem = new Item(itemName, costPrice, sellingPrice, quantity, currentProfit);&#xD;
+			inventoryItems.add(newInventoryItem);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PKWJvrXEem577RgX_-HzA" name="itemDoesNotExistInInventory" specification="__M-k0PrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PKWJ_rXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PKWKPrXEem577RgX_-HzA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (Item item : inventoryItems) {&#xD;
+			if (item.getName().equals(itemName)) {&#xD;
+				return false;&#xD;
+			}&#xD;
+		}&#xD;
+		return true;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PK9MPrXEem577RgX_-HzA" name="deleteItem" specification="__M_y8PrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PK9MfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (Item itemToDelete : inventoryItems) {&#xD;
+			if (itemToDelete.getName().equals(itemName)) {&#xD;
+				totalProfit -= itemToDelete.getQuantity() * itemToDelete.getCostPrice();&#xD;
+				inventoryItems.remove(itemToDelete);&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PK9MvrXEem577RgX_-HzA" name="updateBuy" specification="__NBoIPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PK9M_rXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PK9NPrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (Item itemToUpdate : inventoryItems) {&#xD;
+			if (itemToUpdate.getName().equals(itemName)) {&#xD;
+				itemToUpdate.setQuantity(quantity);&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PLkQPrXEem577RgX_-HzA" name="updateSell" specification="__NDdUPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PLkQfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PLkQvrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (Item itemToSell : inventoryItems) {&#xD;
+			if (itemToSell.getName().equals(itemName)) {&#xD;
+				totalProfit += (itemToSell.getSellingPrice() - itemToSell.getCostPrice()) * quantity;&#xD;
+				itemToSell.setQuantity(itemToSell.getQuantity() - quantity);&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PLkQ_rXEem577RgX_-HzA" name="generateReport" specification="__NFSgvrXEem577RgX_-HzA">
+          <language>java</language>
+          <body>System.out.println(&quot;                             INVENTORY REPORT                              &quot;);&#xD;
+		System.out.println(&quot;Item Name   \t Bought At \t Sold At \t AvailableQty \t   Value&quot;);&#xD;
+		System.out.println(&quot;-------------------------------------------------------------------------- &quot;);&#xD;
+		float totalValue = 0;&#xD;
+		String format = &quot;%-18s%-15s%-20s%-15s%s%n&quot;;&#xD;
+		Collections.sort(inventoryItems);&#xD;
+		for (Item item : inventoryItems) {&#xD;
+			System.out.printf(format, item.getName(), item.getCostPrice(), item.getSellingPrice(), item.getQuantity(),&#xD;
+					item.getCostPrice() * item.getQuantity());&#xD;
+			totalValue += item.getCostPrice() * item.getQuantity();&#xD;
+		}&#xD;
+		System.out.println(&quot;-------------------------------------------------------------------------- &quot;);&#xD;
+		System.out.println(&quot;Total Value 							   &quot; + String.format(&quot;%.2f&quot;, totalValue));&#xD;
+		System.out.println(&quot;Profit since previous report 			   		   &quot; + String.format(&quot;%.2f&quot;, totalProfit));&#xD;
+		totalProfit = 0;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PMLUPrXEem577RgX_-HzA" name="updateSellPrice" specification="__NHuwPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__PMLUfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__PMLUvrXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (Item itemSellToUpdate : inventoryItems) {&#xD;
+			if (itemSellToUpdate.getName().equals(itemName)) {&#xD;
+				itemSellToUpdate.setSellingPrice(sellingPrice);&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__M6TYPrXEem577RgX_-HzA" name="createItem" method="__PKWIPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__M6TYfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M6TYvrXEem577RgX_-HzA" name="costPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M6TY_rXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M6TZPrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M66cPrXEem577RgX_-HzA" name="currentProfit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M-k0PrXEem577RgX_-HzA" name="itemDoesNotExistInInventory" visibility="private" method="__PKWJvrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__M-k0frXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__M_L4PrXEem577RgX_-HzA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__M_y8PrXEem577RgX_-HzA" name="deleteItem" method="__PK9MPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__M_y8frXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__NBoIPrXEem577RgX_-HzA" name="updateBuy" method="__PK9MvrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__NBoIfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__NBoIvrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__NDdUPrXEem577RgX_-HzA" name="updateSell" method="__PLkQPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__NDdUfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__NEEYPrXEem577RgX_-HzA" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__NFSgvrXEem577RgX_-HzA" name="generateReport" method="__PLkQ_rXEem577RgX_-HzA"/>
+        <ownedOperation xmi:id="__NHuwPrXEem577RgX_-HzA" name="updateSellPrice" method="__PMLUPrXEem577RgX_-HzA">
+          <ownedParameter xmi:id="__NHuwfrXEem577RgX_-HzA" name="itemName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__NHuwvrXEem577RgX_-HzA" name="sellingPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__PSR8PrXEem577RgX_-HzA" name="" memberEnd="__PSR8frXEem577RgX_-HzA __O0-8PrXEem577RgX_-HzA">
+        <ownedEnd xmi:id="__PSR8frXEem577RgX_-HzA" name="" type="__M4eMPrXEem577RgX_-HzA" association="__PSR8PrXEem577RgX_-HzA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__MKFcPrXEem577RgX_-HzA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="__MKFcfrXEem577RgX_-HzA" name="junit">
+        <packagedElement xmi:type="uml:Class" xmi:id="__OlHUPrXEem577RgX_-HzA" name="Assert"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="__OnjkPrXEem577RgX_-HzA" name="Test"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__MMhsPrXEem577RgX_-HzA" name="test">
+      <packagedElement xmi:type="uml:Class" xmi:id="__NMnQPrXEem577RgX_-HzA" name="XInventoryServiceImplTest">
+        <ownedAttribute xmi:id="__O5QYPrXEem577RgX_-HzA" name="serviceCaller" visibility="private" isStatic="true" type="__M4eMPrXEem577RgX_-HzA" association="__PUHIfrXEem577RgX_-HzA">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__O5QYfrXEem577RgX_-HzA" value="null"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PMyYPrXEem577RgX_-HzA" name="_initializer1" specification="__NN1YPrXEem577RgX_-HzA">
+          <language>java</language>
+          <body>serviceCaller = new XInventoryServiceImpl();&#xD;
+		serviceCaller.createItem(&quot;ITEM1&quot;, (float) 12.23, (float) 35.12, 0, 0);&#xD;
+		serviceCaller.createItem(&quot;ITEM2&quot;, (float) 2.35, (float) 43.42, 0, 0);&#xD;
+		serviceCaller.createItem(&quot;ITEM3&quot;, (float) 1.30, (float) 22.52, 0, 0);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PMyYfrXEem577RgX_-HzA" name="testCreateItemAndDeleteItem" specification="__NOccfrXEem577RgX_-HzA">
+          <language>java</language>
+          <body>serviceCaller.createItem(&quot;ITEM_4_TEMP&quot;, (float) 45.73, (float) 21.62, 0, 0);&#xD;
+		serviceCaller.createItem(&quot;ITEM_5_TEMP&quot;, (float) 56.22, (float) 66.12, 0, 0);&#xD;
+		serviceCaller.createItem(&quot;ITEM_6_TEMP&quot;, (float) 21.23, (float) 35.42, 0, 0);&#xD;
+		assertEquals(6, XInventoryServiceImpl.inventoryItems.size());&#xD;
+		serviceCaller.deleteItem(&quot;ITEM_4_TEMP&quot;);&#xD;
+		serviceCaller.deleteItem(&quot;ITEM_5_TEMP&quot;);&#xD;
+		serviceCaller.deleteItem(&quot;ITEM_6_TEMP&quot;);&#xD;
+		assertEquals(3, XInventoryServiceImpl.inventoryItems.size());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__PMyYvrXEem577RgX_-HzA" name="testUpdateSellAndUpdateSellPriceItem" specification="__NPqkvrXEem577RgX_-HzA">
+          <language>java</language>
+          <body>serviceCaller.createItem(&quot;ITEM_TEMPORARY&quot;, (float) 12.23, (float) 25.12, 0, 0);&#xD;
+		serviceCaller.updateBuy(&quot;ITEM_TEMPORARY&quot;, 250);&#xD;
+		serviceCaller.updateSell(&quot;ITEM_TEMPORARY&quot;, 25);&#xD;
+		for (Item item : XInventoryServiceImpl.inventoryItems) {&#xD;
+			if (item.getName().equals(&quot;ITEM_TEMPORARY&quot;)) {&#xD;
+				assertEquals(225, item.getQuantity());&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		serviceCaller.updateSellPrice(&quot;ITEM_TEMPORARY&quot;, 25);&#xD;
+		for (Item item : XInventoryServiceImpl.inventoryItems) {&#xD;
+			if (item.getName().equals(&quot;ITEM_TEMPORARY&quot;)) {&#xD;
+				assertEquals(25.0, item.getSellingPrice(), 0);&#xD;
+				serviceCaller.deleteItem(&quot;ITEM_TEMPORARY&quot;);&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		assertEquals(-2429.50, XInventoryServiceImpl.totalProfit, 0);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__NN1YPrXEem577RgX_-HzA" name="_initializer1" isStatic="true" method="__PMyYPrXEem577RgX_-HzA">
+          <eAnnotations xmi:id="__NN1YfrXEem577RgX_-HzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__NN1YvrXEem577RgX_-HzA" key="init"/>
+          </eAnnotations>
+        </ownedOperation>
+        <ownedOperation xmi:id="__NOccfrXEem577RgX_-HzA" name="testCreateItemAndDeleteItem" method="__PMyYfrXEem577RgX_-HzA"/>
+        <ownedOperation xmi:id="__NPqkvrXEem577RgX_-HzA" name="testUpdateSellAndUpdateSellPriceItem" method="__PMyYvrXEem577RgX_-HzA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__PUHIfrXEem577RgX_-HzA" name="" memberEnd="__PUHIvrXEem577RgX_-HzA __O5QYPrXEem577RgX_-HzA">
+        <ownedEnd xmi:id="__PUHIvrXEem577RgX_-HzA" name="" type="__NMnQPrXEem577RgX_-HzA" association="__PUHIfrXEem577RgX_-HzA"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_-_Gg4PrXEem577RgX_-HzA">
+      <eAnnotations xmi:id="_-_KyUPrXEem577RgX_-HzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_-_SHEPrXEem577RgX_-HzA" base_Package="_-snpwPrXEem577RgX_-HzA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__M7hgPrXEem577RgX_-HzA" base_Element="__M6TYPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__M9WsPrXEem577RgX_-HzA" base_Element="__M6TYPrXEem577RgX_-HzA">
+    <annotations xmi:id="__M99wPrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NAaAPrXEem577RgX_-HzA" base_Element="__M_y8PrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NBBEPrXEem577RgX_-HzA" base_Element="__M_y8PrXEem577RgX_-HzA">
+    <annotations xmi:id="__NBBEfrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NCPMPrXEem577RgX_-HzA" base_Element="__NBoIPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NC2QPrXEem577RgX_-HzA" base_Element="__NBoIPrXEem577RgX_-HzA">
+    <annotations xmi:id="__NC2QfrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NErcPrXEem577RgX_-HzA" base_Element="__NDdUPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NFSgPrXEem577RgX_-HzA" base_Element="__NDdUPrXEem577RgX_-HzA">
+    <annotations xmi:id="__NFSgfrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NGgoPrXEem577RgX_-HzA" base_Element="__NFSgvrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NHHsPrXEem577RgX_-HzA" base_Element="__NFSgvrXEem577RgX_-HzA">
+    <annotations xmi:id="__NHHsfrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NIV0PrXEem577RgX_-HzA" base_Element="__NHuwPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NJj8PrXEem577RgX_-HzA" base_Element="__NHuwPrXEem577RgX_-HzA">
+    <annotations xmi:id="__NJj8frXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NOccPrXEem577RgX_-HzA" base_Element="__NN1YPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NPDgPrXEem577RgX_-HzA" base_Element="__NOccfrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NPqkPrXEem577RgX_-HzA" base_Element="__NOccfrXEem577RgX_-HzA">
+    <annotations xmi:id="__NPqkfrXEem577RgX_-HzA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NQRoPrXEem577RgX_-HzA" base_Element="__NPqkvrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__NQ4sPrXEem577RgX_-HzA" base_Element="__NPqkvrXEem577RgX_-HzA">
+    <annotations xmi:id="__NQ4sfrXEem577RgX_-HzA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="__OSMYPrXEem577RgX_-HzA" base_Element="__OQXMPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__OXr8PrXEem577RgX_-HzA" base_Element="__OV2wPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Annotations xmi:id="__OYTAPrXEem577RgX_-HzA" base_Element="__OV2wPrXEem577RgX_-HzA">
+    <annotations xmi:id="__OYTAfrXEem577RgX_-HzA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="__Ob9YPrXEem577RgX_-HzA" base_Element="__OaIMPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__OdykPrXEem577RgX_-HzA" base_Element="__OckcPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__OfAsPrXEem577RgX_-HzA" base_Element="__OdykfrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__Om8gPrXEem577RgX_-HzA" base_Element="__OlHUPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__OoxsPrXEem577RgX_-HzA" base_Element="__OnjkPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__OtDIPrXEem577RgX_-HzA" base_Element="__OrN8frXEem577RgX_-HzA"/>
+  <UMLLabProfile:Generics xmi:id="__Ou4UPrXEem577RgX_-HzA" genericsValue="Item" base_Element="__OtqMPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__O20IPrXEem577RgX_-HzA" base_Element="__O0-8PrXEem577RgX_-HzA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__O4CQPrXEem577RgX_-HzA" base_Element="__O3bMPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__O53cPrXEem577RgX_-HzA" base_Element="__O5QYPrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__PUHIPrXEem577RgX_-HzA" base_Element="__PSR8PrXEem577RgX_-HzA"/>
+  <UMLLabProfile:Reference xmi:id="__PVVQPrXEem577RgX_-HzA" base_Element="__PUHIfrXEem577RgX_-HzA"/>
+</xmi:XMI>
